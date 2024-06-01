@@ -1,2 +1,2 @@
 # meshi
-GUI Chat between server and client
+Here you can see all my projects!, Enjoy
