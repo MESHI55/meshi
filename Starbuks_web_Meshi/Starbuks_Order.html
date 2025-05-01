@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+ body{
+ background-image: url('background_star1.png');
+ background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 105%;
+ }
+ 
+  .button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white; 
+  color: green; 
+  border: 2px solid #04AA6D;
+}
+
+.button {
+  background-color: white; 
+  color: green; 
+  border: 2px solid #04AA6D;
+  
+}
+</style>
+<head>
+<script type="text/javascript" src="scriptorder.js">  </script> </head>
+<h2 style="color:White;">==========Price list==========</h2> 
+
+<img src="C:\Users\USER\Downloads\Starbuks_web_Meshi\milkshakes.png" alt="Milkshakes" width="600" height="600" align="right">
+
+<table width="20%" id="alignment" style="color:White;" > 
+<tr>
+<th>Food Item</th>
+<th></th>
+<th>Prices</th>
+</tr>
+<tr>
+<td>Iced Lavanderr Cream Oatmilk Matcha</td> 
+<td> - </td>
+<td>15.00</td> 
+</tr> 
+<tr>
+<td>Iced Lavanderr Cream Oatmilk Latte</td>
+<td> - </td> 
+<td>12.00</td> 
+</tr>
+<tr> 
+<td>Iced Cherry Chai</td>
+<td> - </td>  
+<td>10.00</td>
+</tr> 
+<tr>  
+<td>Chicken Pocket </td>
+<td> - </td> 
+<td>5.00(For a couple)</td> 
+</tr>  
+<tr>
+<td>Colored Coffee</td>
+<td> - </td> 
+<td>20.00</td>
+</tr>
+</table>
+
+<table style="background-color:White;left: 100px;">  <tr>
+<td>Branch : </td>
+<td> 
+<select> 
+<option>--Select Item--</option>
+<option>Coffe</option>
+<option>Food</option> 
+</select>
+</td> 
+</tr>
+<tr>
+<td>User name:</td>
+<td>
+<input type="text" >
+</td>
+</tr>
+<tr><td>Mobile: </td>
+<td><input type="text" id="mblenmb" onfocusout="checkmob()"></td></tr> 
+</table>
+<br>
+
+<form name="tblform" >
+<table width="40%"  id="alignment" >
+<tr>
+<th>Food Item</th>
+<th> </th>
+<th>Quantity</th>
+<th>Price</th> 
+</tr>
+<tr> 
+<td>Item 1:</td> 
+<td>
+<select id="item1">
+<option value="1">--Select Item--</option> 
+<option value="Chicken pizza">Iced Lavanderr Cream Oatmilk Matcha</option> 
+<option value="Vegetable Pizza">Iced Lavanderr Cream Oatmilk Latte</option> 
+<option value="Chicken Kottu">Iced Cherry Chai</option> 
+<option value="Vegetable Kottu">Chicken Pocket</option> 
+<option value="Water Bottle ">Colored Coffe</option> 
+</select>
+</td> 
+<td><input type="number" value="0" id="q1"></td>
+<td><input type="text" id="p1"></td>
+</tr>   
+<tr>
+<td>Item 2:</td>
+<td>
+<select id="item2"> 
+<option value="1">--Select Item--</option> 
+<option value="Chicken pizza">Iced Lavanderr Cream Oatmilk Matcha</option> 
+<option value="Vegetable Pizza">Iced Lavanderr Cream Oatmilk Latte</option> 
+<option value="Chicken Kottu">Iced Cherry Chai</option>  
+<option value="Vegetable Kottu">Chicken Pocket</option>
+<option value="Water Bottle ">Colored Coffe</option>  
+</select>
+</td>
+<td><input  type="number" value="0" id="q2"></td>  
+<td><input type="text"  id="p2"></td>  
+</tr> 
+<tr>
+<td>Item 3:</td>
+<td><select id="item3">  
+<option value="1">--Select Item--</option> 
+<option value="Chicken pizza">Iced Lavanderr Cream Oatmilk Matcha</option>  
+<option value="Vegetable Pizza">Iced Lavanderr Cream Oatmilk Latte</option> 
+<option value="Chicken Kottu">Iced Cherry Chai</option>
+<option value="Vegetable Kottu">Chicken Pocket</option> 
+<option value="Water Bottle ">Colored Coffe</option> 
+</select>
+</td>
+<td><input type="number" value="0" id="q3"></td>
+<td><input type="text"  id="p3"></td> 
+</tr> 
+<tr>
+<td>Item 4:</td>
+<td><select id="item4">   
+<option value="1">--Select Item--</option> 
+<option value="Chicken pizza">Iced Lavanderr Cream Oatmilk Matcha</option>   
+<option value="Vegetable Pizza">Iced Lavanderr Cream Oatmilk Latte</option> 
+<option value="Chicken Kottu">Iced Cherry Chai</option> 
+<option value="Vegetable Kottu">Chicken Pocket</option> 
+<option value="Water Bottle ">Colored Coffe</option>   
+</select>
+</td>
+<td><input type="number" value="0" id="q4"></td>
+<td><input type="text"  id="p4"></td> 
+</tr>    
+<tr>
+<td></td> 
+<td></td> 
+<td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+<td><input type="reset" class="button" value="Clear"></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
